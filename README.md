@@ -29,9 +29,9 @@
 <tr><th colspan="6">INFORMACIÓN BÁSICA</th></tr>
 </theader>
 <tbody>
-<tr><td>ASIGNATURA:</td><td colspan="5">Estructura de Datos y Algoritmos</td></tr><tr><td>TÍTULO DE LA PRÁCTICA:</td><td colspan="5"Sort y Listas Enlazadas</td></tr>
-<tr><td>TÍTULO DE LA PRÁCTICA:</td><td colspan="5"Grafos</td></tr>
-<td>NÚMERO DE PRÁCTICA:</td><td>04</td><td>AÑO LECTIVO:</td><td>2022 A</td><td>NRO. SEMESTRE:</td><td>III</td>
+<tr><td>ASIGNATURA:</td><td colspan="5">Estructura de Datos y Algoritmos</td></tr><tr>
+<tr><td>TÍTULO DE LA PRÁCTICA:</td><td colspan="5">Grafos</td></tr>
+<td>NÚMERO DE PRÁCTICA:</td><td>08</td><td>AÑO LECTIVO:</td><td>2022 A</td><td>NRO. SEMESTRE:</td><td>III</td>
 </tr>
 <tr>
 <td>FECHA DE PRESENTACIÓN:</td><td>21-Agosto-2022</td><td>HORA DE PRESENTACIÓN:</td><td colspan="3">23:55</td>
@@ -64,12 +64,14 @@
           </td></tr>   
         <tr><td colspan="6">II. SOLUCIÓN DEL CUESTIONARIO
          <ul>
-         <li>¿Pregunta 1?
+         <li>¿Cuantas variantes del algoritmo de Dijkstra hay y cuál es la diferencia entre
+ellas?
               <ul>
 		</li>
                </ul>
            </li>
-        <li>¿Pregunta 2?
+        <li>Invetigue sobre los ALGORITMOS DE CAMINOS MINIMOS e indique, ¿Qué
+similitudes encuentra, qué diferencias, en qué casos utilizar y porque?
             <ul>
             </ul>
         </li>
