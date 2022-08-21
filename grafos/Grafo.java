@@ -97,5 +97,21 @@ public class Grafo {
 			}
 			System.out.println();
 		}
+  }
+  public boolean listaAdyVacia(int v) {
+		if (grafo[v] == null)
+			return true;
+		return false;
+	}
+
+	public Nodo getPrimerAd(int v) {
+		return grafo[v];
+	}
+
+	public Nodo nextAdy(Nodo anterior) {
+		if (anterior.sgte == null)
+			return null;
+		else
+			return anterior.sgte;
 	}
 }
