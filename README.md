@@ -55,7 +55,10 @@
 <table>
  <theader>
         <tr><th>SOLUCIÓN Y RESULTADOS</th></tr>
-	<th><h2>Implementar el cogido de Grafo cuya representacion sea realizada mediante LISTA DE ADYACENCIA.</h2>
+	 </theader>
+    <tbody>
+        <tr><td colspan="6">I. SOLUCIÓN DE EJERCICIOS/PROBLEMAS
+	<h2>Implementar el cogido de Grafo cuya representacion sea realizada mediante LISTA DE ADYACENCIA.</h2>
 <p> Se hace la siguiente clase llamada Grafo con los métodos correspondientes para almacenar vectores y estos formen aristas, para realizar la lista de  adyacencia se debe hacer grafos dirigidos, es por ello que la clase se dedica a crear dichos grafos; el programa se encuentra en grafosI</p><br>
 
 	    
@@ -291,7 +294,34 @@ Con ello se hace la prueba y se nos da el siguiente resultado:
 	    <img src="Imagenes/Imagen_07"><br>
 	    <h5>b) Mostrar la lista de adyacencia del grafo.</h5><br>
 	    <img src="Imagenes/Imagen_04"><br>
-	    <h2>Realizar un metodo en la clase Grafo. Este metodo permitira saber si un grafo esta incluido en otro. Los parametros de entrada son 2 grafos y la salida del metodo es true si hay inclusion y false el caso contrario.</h2></tr></td>
+	    <h4>Realizar un metodo en la clase Grafo. Este metodo permitira saber si un grafo esta incluido en otro. Los parametros de entrada son 2 grafos y la salida del metodo es true si hay inclusion y false el caso contrario.</h4>
+	    Para realizar dicho proceso se hace modificaciones en el grafoI, estos cambios se encuentra en el grafoIV, el unico método que se agrega el siguiente:<br>
+```java
+ public static boolean grafoInclude(Grafos_2 p, Grafos_2 q) {
+                int count = 0;
+                if (p.nroVertices != q.nroVertices) {
+                        int n = 0;
+                        if (p.nroVertices > q.nroVertices)
+                                n = q.nroVertices;
+                        else
+                                n = p.nroVertices;
+                        for (int i = 0; i < n; i++) {
+                                Nodo actual = q.grafo[i];
+                                while (actual != null) {
+                                        if(p.existeArista(i, actual.vertice))
+                                                count++;
+                                        actual = q.grafo[i].sgte;
+                                }
+                        }
+                }
+                if (count>2)
+                        return true;
+                return false;
+        }
+```
+El resultado que nos da en el Test2 es el siguiente: <br>
+<img src="Imagenes/Imagen05">
+</tr></td>
 	   
    </theader>
         <tbody>
