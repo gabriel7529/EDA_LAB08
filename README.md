@@ -329,7 +329,7 @@ El resultado que nos da en el Test2 es el siguiente: <br>
          <ul>
          <li>¿Cuantas variantes del algoritmo de Dijkstra hay y cuál es la diferencia entre ellas?
               <ul>
-		<p>El algoritmo existe en muchas variantes. El algoritmo original de Dijkstra encontró la ruta más corta entre dos nodos dados, [6] pero una variante más común fija un solo nodo como el nodo "fuente" y encuentra las rutas más cortas desde la fuente a todos los demás nodos en el gráfico, produciendo una ruta más corta árbol .</p>
+		<p>El algoritmo existe en muchas variantes. El algoritmo original de Dijkstra encontró la ruta más corta entre dos nodos dados, pero una variante más común fija un solo nodo como el nodo "fuente" y encuentra las rutas más cortas desde la fuente a todos los demás nodos en el gráfico, produciendo una ruta más corta árbol .</p>
                </ul>
            </li>
 		</ul>
