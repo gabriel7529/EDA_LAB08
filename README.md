@@ -284,9 +284,17 @@ Por ultimo queda el algoritmo de Dijkstra en el cual usa un grafo dirigido, es p
   }
 ```
 Con ello se hace la prueba y se nos da el siguiente resultado:
-					   
+<img src="Imagenes/Imagen_06><br>
+	    <h2>Solucionar el siguiente ejercicio:</h2>
+	    <p>El grafo de palabras se define de la siguiente manera: cada vértice es una palabra en el idioma Inglés y dos palabras son adyacentes si difieren exactamente en una posición. Por ejemplo, las cords y los corps son adyacentes, mientras que los corps y crops no lo son.</p>
+	    <h5>a) Dibuje el grafo definido por las siguientes palabras: words cords corps coops crops drops drips grips gripe grape graph</h5><br>
+	    <img src="Imagenes/Imagen_07"><br>
+	    <h5>b) Mostrar la lista de adyacencia del grafo.</h5><br>
+	    <img src="Imagenes/Imagen_04"><br>
+	    <h2>Realizar un metodo en la clase Grafo. Este metodo permitira saber si un grafo esta incluido en otro. Los parametros de entrada son 2 grafos y la salida del metodo es true si hay inclusion y false el caso contrario.</h2>
 	    
-    </theader>
+	    
+ </theader>
     <tbody>
         <tr><td colspan="6">I. SOLUCIÓN DE EJERCICIOS/PROBLEMAS
           <ul>
