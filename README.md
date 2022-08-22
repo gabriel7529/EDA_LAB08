@@ -55,6 +55,24 @@
 <table>
     <theader>
         <tr><th colspan="6">SOLUCIÓN Y RESULTADOS</th></tr>
+	<h2>Implementar el cogido de Grafo cuya representacion sea realizada mediante LISTA DE ADYACENCIA.</h2>
+	<p> Se hace la siguiente clase llamada Grafo con los métodos correspondientes para almacenar vectores y estos formen aristas, para realizar la lista de adyacencia se debe hacer grafos dirigidos, es por ello que la clase se dedica a crear dichos grafos; el programa se encuentra en grafosI</p>
+```java
+private Nodo grafo[];
+        private int nroVertices;
+
+        class Nodo {
+                int vertice;
+                int pesoArista;
+                Nodo sgte;
+
+                public Nodo(int v, int a) {
+                        this.vertice = v;
+                        this.pesoArista = a;
+                        this.sgte = null;
+                }
+        }
+```
     </theader>
     <tbody>
         <tr><td colspan="6">I. SOLUCIÓN DE EJERCICIOS/PROBLEMAS
