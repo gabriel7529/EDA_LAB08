@@ -189,8 +189,102 @@ class Grafo {
 }
 ```
 Se hacen dos Test para evaluar cada uno de los métodos en el cuál el Test2 que se hace el BSF, a traves de este método<br>
+	    
+```java
+	    
+        public static void recursiveBFS(Grafo graph, Queue<Integer> q, boolean[] discovered) {
+                if (q.isEmpty()) {
+                        return;
+                }
+                int v = q.poll();
+                System.out.print(v + " ");
 
+                for (int u : graph.adjList.get(v)) {
+                        if (!discovered[u]) {
+                                discovered[u] = true;
+                                q.add(u);
+                        }
+                }
+                recursiveBFS(graph, q, discovered);
+        }
+```
+A lo cual mediante la recursividad se va poco a poco mostrando el siguiente recorrido de los elementos usados:
+<img src="Imagenes/Imagen_02"><br>
+En cuanto al otro se hace un Test3 para que se uso el siguiente método:<br>
 
+```java
+ public static void DFS(Grafo grafo, int v, boolean[] discovered) {
+
+                discovered[v] = true;
+
+                System.out.print(v + " ");
+
+                for (int u : grafo.adjList.get(v)) {
+                        if (!discovered[u]) {
+                                DFS(grafo, u, discovered);
+                        }
+                }
+        }
+``` 
+Que por medio del For va iterando sobre los estados correspondientes a las visitas que realiza, dando el siguiente resultado:<br>
+	  <img src="Imagenes/Imagen_03"><br>
+Por ultimo queda el algoritmo de Dijkstra en el cual usa un grafo dirigido, es por ello que se crea dicho grafo dentro de grafoII/Dijkstra, ahí se usa tres clases, el Node, el heap y el grafo, el Node solo se implementa el atributo peso, en el heap, es el que indica el lider de las nodes donde solo tiene dos atributos, el grafo cuenta con los mismos atributos vistos anteriormente, en su Test2 ahí estan dos métodos que permiten recorrer los caminos y mostrarlos<br>
+```java
+	    private static void getRoute(int[] prev, int i, List<Integer> route) {
+    if (i >= 0) {
+      getRoute(prev, prev[i], route);
+      route.add(i);
+    }
+  }
+
+  public static void findShortestPaths(Grafo graph, int source, int n) {
+    PriorityQueue<Heap> minHeap;
+    minHeap = new PriorityQueue<>(Comparator.comparingInt(heap -> heap.weight));
+    minHeap.add(new Heap(source, 0));
+
+    List<Integer> dist;
+    dist = new ArrayList<>(Collections.nCopies(n, Integer.MAX_VALUE));
+
+    dist.set(source, 0);
+
+    boolean[] done = new boolean[n];
+    done[source] = true;
+
+    int[] prev = new int[n];
+    prev[source] = -1;
+
+    while (!minHeap.isEmpty()) {
+
+      Heap node = minHeap.poll();
+
+      int u = node.vertex;
+
+      for (Node aux : graph.adjList.get(u)) {
+        int v = aux.dest;
+        int weight = aux.weigth;
+
+        if (!done[v] && (dist.get(u) + weight) < dist.get(v)) {
+          dist.set(v, dist.get(u) + weight);
+          prev[v] = u;
+          minHeap.add(new Heap(v, dist.get(v)));
+        }
+      }
+
+      done[u] = true;
+    }
+
+    List<Integer> route = new ArrayList<>();
+    for (int i = 0; i < n; i++) {
+      if (i != source && dist.get(i) != Integer.MAX_VALUE) {
+        getRoute(prev, i, route);
+        System.out.printf("Ruta (%d —> %d): de Costo Minimo = %d, Ruta = %s\n", source, i, dist.get(i), route);
+        route.clear();
+      }
+    }
+  }
+```
+Con ello se hace la prueba y se nos da el siguiente resultado:
+					   
 	    
     </theader>
     <tbody>
