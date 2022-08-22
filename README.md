@@ -334,13 +334,12 @@ El resultado que nos da en el Test2 es el siguiente: <br>
            </li>
         <li>Invetigue sobre los ALGORITMOS DE CAMINOS MINIMOS e indique, ¿Qué similitudes encuentra, qué diferencias, en qué casos utilizar y porque?
             <ul>
+		    <p>Los caminos minimos consiste en encontrar un camino entre dos nodos de manera que la suma de los costes de los nodos que lo constituyen es mínima. Tenemos los algoritmo de Dijkstra, Bellman-Ford, Floyd-Warshall que unos se pueden usar con pesos negativos y otros no, también que son más efectivos en ciertas cantidad y mientras no usen mayormente los números negativos. Su uso son para problemas donde consiste en hallar la mejor forma de ir desde un punto a otro (o a varios otros) porque se requere encontrar la distancia minima recorrida, para hacerlar los procesos, entre varias posibilidades.
             </ul>
         </li>
          </ul>
         </td></tr>
-        <tr><td colspan="6">III. CONCLUSIONES
-          <li></li>
-</td></tr>
+       
  </tbody>
 </table>
 
