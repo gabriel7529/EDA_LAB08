@@ -293,7 +293,7 @@ Con ello se hace la prueba y se nos da el siguiente resultado:
 	    <h5>a) Dibuje el grafo definido por las siguientes palabras: words cords corps coops crops drops drips grips gripe grape graph</h5><br>
 	    <img src="Imagenes/Imagen_07.png"><br>
 	    <h5>b) Mostrar la lista de adyacencia del grafo.</h5><br>
-	    <img src="Imagenes/Imagen_04"><br>
+	    <img src="Imagenes/Imagen_04.png"><br>
 	    <h4>Realizar un metodo en la clase Grafo. Este metodo permitira saber si un grafo esta incluido en otro. Los parametros de entrada son 2 grafos y la salida del metodo es true si hay inclusion y false el caso contrario.</h4>
 	    Para realizar dicho proceso se hace modificaciones en el grafoI, estos cambios se encuentra en el grafoIV, el unico método que se agrega el siguiente:<br>
 ```java
@@ -320,7 +320,7 @@ Con ello se hace la prueba y se nos da el siguiente resultado:
         }
 ```
 El resultado que nos da en el Test2 es el siguiente: <br>
-<img src="Imagenes/Imagen05.png">
+<img src="Imagenes/Imagen_05.png">
 </tr></td>
 	   
    </theader>
