@@ -56,8 +56,11 @@
     <theader>
         <tr><th colspan="6">SOLUCIÓN Y RESULTADOS</th></tr>
 	<h2>Implementar el cogido de Grafo cuya representacion sea realizada mediante LISTA DE ADYACENCIA.</h2>
-	<p> Se hace la siguiente clase llamada Grafo con los métodos correspondientes para almacenar vectores y estos formen aristas, para realizar la lista de adyacencia se debe hacer grafos dirigidos, es por ello que la clase se dedica a crear dichos grafos; el programa se encuentra en grafosI</p>
+	<p> Se hace la siguiente clase llamada Grafo con los métodos correspondientes para almacenar vectores y estos formen aristas, para realizar la lista de adyacencia se debe hacer grafos dirigidos, es por ello que la clase se dedica a crear dichos grafos; el programa se encuentra en grafosI</p><br>
+
+	    
 ```java
+	    
 private Nodo grafo[];
         private int nroVertices;
 
@@ -73,6 +76,122 @@ private Nodo grafo[];
                 }
         }
 ```
+Los métodos que determinan la creación de una arista, depende del método booleano existeArista, que averigua si existe la arista, para luego que lo use el método insertaArista para cuando exista devuelva un mensaje y si no, inserte dicha arista con sus vectores
+
+```java
+	     public boolean existeArista(int v1, int v2) {
+                if (grafo[v1] == null)
+                        return false;
+                Nodo actual = grafo[v1];
+                while (actual != null) {
+                        if (actual.vertice == v2)
+                                return true;
+                        actual = actual.sgte;
+                }
+                return false;
+        }
+
+        public void insertaArista(int v1, int v2, int peso) {
+
+                if (!existeArista(v1, v2)) {
+                        Nodo nuevo = new Nodo(v2, peso);
+
+                        if (grafo[v1] == null) {
+                                grafo[v1] = nuevo;
+                        } else {
+                                Nodo actual = grafo[v1];
+                                while (actual.sgte != null) {
+                                        actual = actual.sgte;
+                                }
+
+                                actual.sgte = nuevo;
+                        }
+                } else {
+                        System.out.println("Ya existe una arista entre:" + v1 + " y " + v2);
+                }
+        }
+```
+Luego se crea eliminarArista que también usa el mismo método de insertar para luego hacer el reemplazo y eliminación de la arista y del vertice o los vertices determinados, también se crea un mostrar grafo para imprimir el resultado.
+
+```java
+	    public void eliminarArista(int v1, int v2) {
+                if (existeArista(v1, v2)) {
+                        Nodo actual = grafo[v1];
+
+                        if (actual.vertice == v2) {
+                                grafo[v1] = actual.sgte;
+                        } else {
+                                Nodo anterior = actual;
+                                actual = actual.sgte;
+
+                                while (actual != null) {
+                                        if (actual.vertice == v2) {
+                                                anterior.sgte = actual.sgte;
+                                                return;
+                                        }
+                                        anterior = actual;
+                                        actual = actual.sgte;
+                                }
+                        }
+                } else {
+                        System.out.println("No existe una arista entre: " + v1 + " y " + v2);
+                }
+        }
+	    
+		public void mostrarGrafo() {
+		    for (int i = 0; i < grafo.length; i++) {
+		      Nodo actual = grafo[i];
+
+		      while (actual != null) {
+			System.out.printf("Vertice v1 = %d -> ", i);
+			System.out.printf("Vertice v2 = %d peso = (%d)\n", actual.vertice, actual.pesoArista);
+
+			actual = actual.sgte;
+		      }
+		      System.out.println();
+		    }
+		  }
+```
+Se hace una prueba a traves del Test que esta en la carpeta mencionada:<br>
+<img src= "Imagenes/Imagen_01"><br>
+	    <h2>Implementar BSF, DFS y Dijkstra con sus respectivos casos de prueba.</h2><br>
+	    Para la implementación del BSF Y DFS, se hace uso de un grafo no dirigido, que se encuentra en la carpeta grafoII, en esta se encuentra las clases Node y grafo que Node tiene los siguientes atributos<br>
+	    
+```java
+	    public class Node {
+        int source, dest;
+
+        public Node(int source, int dest) {
+                this.source = source;
+                this.dest = dest;
+        }
+}
+```
+Este Node se usa en la clase Grafo a traves de una doble List de esa clase, que por medio de ciclos y el arralist van introduciendo los elementos y atributos del la clase Node.<br>
+```java
+	    import java.util.*;
+class Grafo {
+        List<List<Integer>> adjList = null;
+        // Constructor
+        Grafo(List<Node> Nodes, int n){
+        adjList = new ArrayList<>();
+        for (int i = 0; i < n; i++) {
+            adjList.add(new ArrayList<>());
+        }
+        for (Node node: Nodes){
+            int src = node.source;
+            int dest = node.dest;
+
+            adjList.get(src).add(dest);
+            adjList.get(dest).add(src);
+        }
+    }
+}
+```
+Se hacen dos Test para evaluar cada uno de los métodos en el cuál el Test2 que se hace el BSF, a traves de este método<br>
+
+
+	    
     </theader>
     <tbody>
         <tr><td colspan="6">I. SOLUCIÓN DE EJERCICIOS/PROBLEMAS
