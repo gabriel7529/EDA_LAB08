@@ -56,7 +56,7 @@
     <theader>
         <tr><th colspan="6">SOLUCIÓN Y RESULTADOS</th></tr>
 	<h2>Implementar el cogido de Grafo cuya representacion sea realizada mediante LISTA DE ADYACENCIA.</h2>
-	<p> Se hace la siguiente clase llamada Grafo con los métodos correspondientes para almacenar vectores y estos formen aristas, para realizar la lista de adyacencia se debe hacer grafos dirigidos, es por ello que la clase se dedica a crear dichos grafos; el programa se encuentra en grafosI</p><br>
+	<p> Se hace la siguiente clase llamada Grafo con los métodos correspondientes para almacenar vectores y estos formen aristas, para realizar la lista de  adyacencia se debe hacer grafos dirigidos, es por ello que la clase se dedica a crear dichos grafos; el programa se encuentra en grafosI</p><br>
 
 	    
 ```java
@@ -294,23 +294,16 @@ Con ello se hace la prueba y se nos da el siguiente resultado:
 	    <h2>Realizar un metodo en la clase Grafo. Este metodo permitira saber si un grafo esta incluido en otro. Los parametros de entrada son 2 grafos y la salida del metodo es true si hay inclusion y false el caso contrario.</h2>
 	    
 	    
- </theader>
-    <tbody>
-        <tr><td colspan="6">I. SOLUCIÓN DE EJERCICIOS/PROBLEMAS
-          <ul>
-          <li> 
-	   </li>
-          </td></tr>   
+   </theader>
+        <tbody>
         <tr><td colspan="6">II. SOLUCIÓN DEL CUESTIONARIO
          <ul>
-         <li>¿Cuantas variantes del algoritmo de Dijkstra hay y cuál es la diferencia entre
-ellas?
+         <li>¿Cuantas variantes del algoritmo de Dijkstra hay y cuál es la diferencia entre ellas?
               <ul>
 		</li>
                </ul>
            </li>
-        <li>Invetigue sobre los ALGORITMOS DE CAMINOS MINIMOS e indique, ¿Qué
-similitudes encuentra, qué diferencias, en qué casos utilizar y porque?
+        <li>Invetigue sobre los ALGORITMOS DE CAMINOS MINIMOS e indique, ¿Qué similitudes encuentra, qué diferencias, en qué casos utilizar y porque?
             <ul>
             </ul>
         </li>
