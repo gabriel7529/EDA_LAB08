@@ -83,35 +83,34 @@ public class Grafo {
 		for (int i = 0; i < grafo.length; i++) {
 			grafo[i] = null;
 		}
-	}
+  }
+  public void mostrarGrafo() {
+    for (int i = 0; i < grafo.length; i++) {
+      Nodo actual = grafo[i];
 
-	public void mostrarGrafo() {
-		for (int i = 0; i < grafo.length; i++) {
-			Nodo actual = grafo[i];
+      while (actual != null) {
+        System.out.printf("Vertice v1 = %d -> ", i);
+        System.out.printf("Vertice v2 = %d peso = (%d)\n", actual.vertice, actual.pesoArista);
 
-			while (actual != null) {
-				System.out.printf("%d -> ", i);
-				System.out.printf("%d(%d)\n", actual.vertice, actual.pesoArista);
-
-				actual = actual.sgte;
-			}
-			System.out.println();
-		}
+        actual = actual.sgte;
+      }
+      System.out.println();
+    }
   }
   public boolean listaAdyVacia(int v) {
-		if (grafo[v] == null)
-			return true;
-		return false;
-	}
+    if (grafo[v] == null)
+      return true;
+    return false;
+  }
 
-	public Nodo getPrimerAd(int v) {
-		return grafo[v];
-	}
+  public Nodo getPrimerAd(int v) {
+    return grafo[v];
+  }
 
-	public Nodo nextAdy(Nodo anterior) {
-		if (anterior.sgte == null)
-			return null;
-		else
-			return anterior.sgte;
-	}
+  public Nodo nextAdy(Nodo anterior) {
+    if (anterior.sgte == null)
+      return null;
+    else
+      return anterior.sgte;
+  }
 }
