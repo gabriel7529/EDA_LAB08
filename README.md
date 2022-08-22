@@ -329,9 +329,10 @@ El resultado que nos da en el Test2 es el siguiente: <br>
          <ul>
          <li>¿Cuantas variantes del algoritmo de Dijkstra hay y cuál es la diferencia entre ellas?
               <ul>
-		</li>
+		<p>El algoritmo existe en muchas variantes. El algoritmo original de Dijkstra encontró la ruta más corta entre dos nodos dados, [6] pero una variante más común fija un solo nodo como el nodo "fuente" y encuentra las rutas más cortas desde la fuente a todos los demás nodos en el gráfico, produciendo una ruta más corta árbol .</p>
                </ul>
            </li>
+		</ul>
         <li>Invetigue sobre los ALGORITMOS DE CAMINOS MINIMOS e indique, ¿Qué similitudes encuentra, qué diferencias, en qué casos utilizar y porque?
             <ul>
 		    <p>Los caminos minimos consiste en encontrar un camino entre dos nodos de manera que la suma de los costes de los nodos que lo constituyen es mínima. Tenemos los algoritmo de Dijkstra, Bellman-Ford, Floyd-Warshall que unos se pueden usar con pesos negativos y otros no, también que son más efectivos en ciertas cantidad y mientras no usen mayormente los números negativos. Su uso son para problemas donde consiste en hallar la mejor forma de ir desde un punto a otro (o a varios otros) porque se requere encontrar la distancia minima recorrida, para hacerlar los procesos, entre varias posibilidades.
@@ -359,7 +360,7 @@ El resultado que nos da en el Test2 es el siguiente: <br>
     <tbody>
         <tr><td>
             <ul>
-              <li>..</li>
+              [1] Weiss M., Data Structures & Problem Solving Using Java, 2010, Addison-Wesley.<br> [2] Escuela de Pedagogía en Educación Matemática, Marcelino Álvarez, et.al., http://repobib.ubiobio.cl/jspui/bitstream/123456789/1953/3/Alvarez_Nunez_Marcelino.pdf<br> [3] http://www.oia.unsam.edu.ar/wp-content/uploads/2017/11/dijkstra-prim.pdf<br>
             </ul></td>
         </tr>
     </tbody>
