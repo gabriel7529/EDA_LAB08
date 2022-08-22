@@ -53,10 +53,10 @@
 </table>
 
 <table>
-    <theader>
-        <tr><th colspan="6">SOLUCIÓN Y RESULTADOS</th></tr>
-	<h2>Implementar el cogido de Grafo cuya representacion sea realizada mediante LISTA DE ADYACENCIA.</h2>
-	<p> Se hace la siguiente clase llamada Grafo con los métodos correspondientes para almacenar vectores y estos formen aristas, para realizar la lista de  adyacencia se debe hacer grafos dirigidos, es por ello que la clase se dedica a crear dichos grafos; el programa se encuentra en grafosI</p><br>
+ <theader>
+        <tr><th>SOLUCIÓN Y RESULTADOS</th></tr>
+	<th><h2>Implementar el cogido de Grafo cuya representacion sea realizada mediante LISTA DE ADYACENCIA.</h2>
+<p> Se hace la siguiente clase llamada Grafo con los métodos correspondientes para almacenar vectores y estos formen aristas, para realizar la lista de  adyacencia se debe hacer grafos dirigidos, es por ello que la clase se dedica a crear dichos grafos; el programa se encuentra en grafosI</p><br>
 
 	    
 ```java
@@ -208,7 +208,7 @@ Se hacen dos Test para evaluar cada uno de los métodos en el cuál el Test2 que
                 recursiveBFS(graph, q, discovered);
         }
 ```
-A lo cual mediante la recursividad se va poco a poco mostrando el siguiente recorrido de los elementos usados:
+A lo cual mediante la recursividad se va poco a poco mostrando el siguiente recorrido de los elementos usados:<br>
 <img src="Imagenes/Imagen_02"><br>
 En cuanto al otro se hace un Test3 para que se uso el siguiente método:<br>
 
@@ -291,9 +291,8 @@ Con ello se hace la prueba y se nos da el siguiente resultado:
 	    <img src="Imagenes/Imagen_07"><br>
 	    <h5>b) Mostrar la lista de adyacencia del grafo.</h5><br>
 	    <img src="Imagenes/Imagen_04"><br>
-	    <h2>Realizar un metodo en la clase Grafo. Este metodo permitira saber si un grafo esta incluido en otro. Los parametros de entrada son 2 grafos y la salida del metodo es true si hay inclusion y false el caso contrario.</h2>
-	    
-	    
+	    <h2>Realizar un metodo en la clase Grafo. Este metodo permitira saber si un grafo esta incluido en otro. Los parametros de entrada son 2 grafos y la salida del metodo es true si hay inclusion y false el caso contrario.</h2></tr></td>
+	   
    </theader>
         <tbody>
         <tr><td colspan="6">II. SOLUCIÓN DEL CUESTIONARIO
