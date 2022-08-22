@@ -156,7 +156,7 @@ Luego se crea eliminarArista que también usa el mismo método de insertar para 
 		  }
 ```
 Se hace una prueba a traves del Test que esta en la carpeta mencionada:<br>
-<img src= "Imagenes/Imagen_01"><br>
+<img src= "Imagenes/Imagen_01.png"><br>
 	    <h2>Implementar BSF, DFS y Dijkstra con sus respectivos casos de prueba.</h2><br>
 	    Para la implementación del BSF Y DFS, se hace uso de un grafo no dirigido, que se encuentra en la carpeta grafoII, en esta se encuentra las clases Node y grafo que Node tiene los siguientes atributos<br>
 	    
@@ -212,7 +212,7 @@ Se hacen dos Test para evaluar cada uno de los métodos en el cuál el Test2 que
         }
 ```
 A lo cual mediante la recursividad se va poco a poco mostrando el siguiente recorrido de los elementos usados:<br>
-<img src="Imagenes/Imagen_02"><br>
+<img src="Imagenes/Imagen_2.png"><br>
 En cuanto al otro se hace un Test3 para que se uso el siguiente método:<br>
 
 ```java
@@ -230,7 +230,7 @@ En cuanto al otro se hace un Test3 para que se uso el siguiente método:<br>
         }
 ``` 
 Que por medio del For va iterando sobre los estados correspondientes a las visitas que realiza, dando el siguiente resultado:<br>
-	  <img src="Imagenes/Imagen_03"><br>
+	  <img src="Imagenes/Imagen_03.png"><br>
 Por ultimo queda el algoritmo de Dijkstra en el cual usa un grafo dirigido, es por ello que se crea dicho grafo dentro de grafoII/Dijkstra, ahí se usa tres clases, el Node, el heap y el grafo, el Node solo se implementa el atributo peso, en el heap, es el que indica el lider de las nodes donde solo tiene dos atributos, el grafo cuenta con los mismos atributos vistos anteriormente, en su Test2 ahí estan dos métodos que permiten recorrer los caminos y mostrarlos<br>
 ```java
 	    private static void getRoute(int[] prev, int i, List<Integer> route) {
@@ -287,11 +287,11 @@ Por ultimo queda el algoritmo de Dijkstra en el cual usa un grafo dirigido, es p
   }
 ```
 Con ello se hace la prueba y se nos da el siguiente resultado:
-<img src="Imagenes/Imagen_06><br>
+<img src="Imagenes/Imagen_06.png><br>
 	    <h2>Solucionar el siguiente ejercicio:</h2>
 	    <p>El grafo de palabras se define de la siguiente manera: cada vértice es una palabra en el idioma Inglés y dos palabras son adyacentes si difieren exactamente en una posición. Por ejemplo, las cords y los corps son adyacentes, mientras que los corps y crops no lo son.</p>
 	    <h5>a) Dibuje el grafo definido por las siguientes palabras: words cords corps coops crops drops drips grips gripe grape graph</h5><br>
-	    <img src="Imagenes/Imagen_07"><br>
+	    <img src="Imagenes/Imagen_07.png"><br>
 	    <h5>b) Mostrar la lista de adyacencia del grafo.</h5><br>
 	    <img src="Imagenes/Imagen_04"><br>
 	    <h4>Realizar un metodo en la clase Grafo. Este metodo permitira saber si un grafo esta incluido en otro. Los parametros de entrada son 2 grafos y la salida del metodo es true si hay inclusion y false el caso contrario.</h4>
@@ -320,7 +320,7 @@ Con ello se hace la prueba y se nos da el siguiente resultado:
         }
 ```
 El resultado que nos da en el Test2 es el siguiente: <br>
-<img src="Imagenes/Imagen05">
+<img src="Imagenes/Imagen05.png">
 </tr></td>
 	   
    </theader>
